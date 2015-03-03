@@ -85,7 +85,7 @@ module.exports = (robot) ->
     updateBrain(allStandups)
 
   getStandups = ->
-    robot.brain.get 'standups' || []
+    robot.brain.get('standups') or []
 
   getStandupsForARoom  = (room) ->
     allStandups      = getStandups()
