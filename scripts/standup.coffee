@@ -49,6 +49,14 @@ module.exports = (robot) ->
     checkStandups()
   , null, true)
 
+  checkStandups = () ->
+    standups = getStandups()
+
+    _(standups).forEach((standup) ->
+      if shouldStandUpFire(standup.time)
+        doStandup standup.room
+    )
+
 
   # compares current time to the assigned time for standup
   # check if it should be fired
