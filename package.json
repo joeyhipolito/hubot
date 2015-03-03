@@ -5,6 +5,7 @@
   "author": "Joey Hipolito <hi@joeyhipolito.me>",
   "description": "crazy beautiful hubot",
   "dependencies": {
+    "cron": "^1.0.8",
     "hubot": "^2.11.1",
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
