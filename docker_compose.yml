@@ -1,0 +1,9 @@
+web:
+  build: .
+  links:
+    - db
+  ports:
+    - "14344:8080"
+
+db:
+  image: redis
